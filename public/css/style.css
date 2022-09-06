@@ -1,5 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
+.logo_text {
+  font-size: 1.75rem;
+  color: #D136D1;
+  font-weight: bold;
+}
+
+.navbar {
+  z-index: 1000;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-right: 2rem;
+  color: white;
+}
+
+.hero_text h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 6.25rem;
+  color: white;
+}
+.hero_text .hero_text--vol {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #D136D1;
+  padding: 10px;
+}
+.hero_text .hero_text--date {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  color: white;
+  padding: 10px;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -54,17 +92,57 @@ input {
   background: rgb(9, 0, 36);
   background: linear-gradient(135deg, #0f012e 0%, #664BBF 60%, #C41A7F 100%);
 }
-
-.hero_main {
+.hero .hero_main {
   display: flex;
-  padding: 140px;
+  padding: 5rem 8.75rem 0 8.75rem;
+}
+.hero .hero_main .mainPicture {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: -200px;
+  right: -100px;
+  z-index: 1;
+}
+.hero .hero_main .mainPicture--title {
+  position: absolute;
+}
+.hero .hero_main .mainPicture--title .mainPicture--name {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: white;
+  padding: 5px;
+}
+.hero .hero_main .mainPicture--title .mainPicture--function {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: white;
+  padding: 5px;
+}
+.hero .hero_main--sub {
+  display: flex;
+}
+.hero .header_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.875rem 1.75rem;
 }
 
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 6.25rem;
+.myButton {
+  -webkit-box-shadow: 0px 10px 13px -7px #D136D1, 5px 5px 15px 5px #740174;
+  box-shadow: 0px 10px 13px -7px #D136D1, 5px 5px 15px 5px #740174;
+  background-image: linear-gradient(135deg, #C41A7F 10%, #664BBF 100%);
+  border-radius: 15px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
   color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.125rem;
+  padding: 7px 25px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
