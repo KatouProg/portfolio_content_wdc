@@ -1,0 +1,21 @@
+{
+  "name": "wdc",
+  "version": "1.0.0",
+  "description": "Website using Sass made from a wireframe",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:public/css/style.css --style expanded",
+    "prefix": "postcss public/css/style.css --use autoprefixer -d public/css/prefixed/",
+    "prod": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed postcss ./public/css/style.css --use autoprefixer -d ./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatouProg/portfolio_content_wdc.git"
+  },
+  "author": "BUXO Quentin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatouProg/portfolio_content_wdc/issues"
+  },
+  "homepage": "https://github.com/KatouProg/portfolio_content_wdc#readme"
+}
