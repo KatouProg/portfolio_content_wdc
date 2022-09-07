@@ -101,6 +101,27 @@ h2 {
   font-size: 1.375rem;
   color: white;
   padding: 4px;
+  margin-bottom: 57px;
+}
+
+.speaker_desc--name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.625rem;
+  color: #D136D1;
+}
+
+.speaker_desc--work {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.125rem;
+  color: white;
+  margin: 10px 0 30px 0;
+}
+
+.speaker_desc--desc {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: 100;
 }
 
 *, *:before, *:after {
@@ -259,6 +280,27 @@ input {
 .speaker_titleContainer {
   text-align: center;
   margin-bottom: 40px;
+}
+
+.speaker_desc {
+  display: flex;
+  margin-top: 70px;
+}
+
+.speaker_desc--img {
+  margin-left: 6.875rem;
+}
+
+.speaker_desc--img2 {
+  margin-right: 6.875rem;
+}
+
+.speaker_desc--desc {
+  overflow: hidden;
+}
+
+.speaker_desc--separation {
+  width: 25%;
 }
 
 .myButton {
