@@ -88,9 +88,9 @@ input {
 .hero {
   display: block;
   width: 100%;
-  height: 700;
+  height: 44rem;
   background: rgb(9, 0, 36);
-  background: linear-gradient(135deg, #0f012e 0%, #664BBF 60%, #C41A7F 100%);
+  background: linear-gradient(135deg, #0E002E 0%, #1E092B 25%, #320C65 50%, #A01B7C 75%, #C21780 100%);
 }
 .hero .hero_main {
   display: flex;
@@ -101,16 +101,20 @@ input {
   height: 100%;
   width: 100%;
   top: -200px;
-  right: -100px;
+  right: -430px;
   z-index: 1;
+  text-align: start;
 }
 .hero .hero_main .mainPicture--title {
   position: absolute;
+  top: 90%;
+  left: 52%;
+  transform: translate(-50%, -50%);
 }
 .hero .hero_main .mainPicture--title .mainPicture--name {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: white;
   padding: 5px;
 }
@@ -124,6 +128,11 @@ input {
 .hero .hero_main--sub {
   display: flex;
 }
+.hero .hero_main--sub .sign {
+  position: absolute;
+  top: 40%;
+  left: 23%;
+}
 .hero .header_container {
   display: flex;
   justify-content: space-between;
@@ -131,10 +140,10 @@ input {
 }
 
 .myButton {
-  -webkit-box-shadow: 0px 10px 13px -7px #D136D1, 5px 5px 15px 5px #740174;
-  box-shadow: 0px 10px 13px -7px #D136D1, 5px 5px 15px 5px #740174;
-  background-image: linear-gradient(135deg, #C41A7F 10%, #664BBF 100%);
-  border-radius: 15px;
+  width: 18.75rem;
+  height: 4.563rem;
+  background-image: linear-gradient(to right, #C41A7F 0%, #664BBF 100%);
+  border-radius: 30px;
   border: none;
   display: inline-block;
   cursor: pointer;
@@ -142,7 +151,17 @@ input {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.125rem;
   padding: 7px 25px;
+  margin-top: 20px;
   text-decoration: none;
+}
+.myButton:hover {
+  background-position: right center;
+  box-shadow: 0px 10px 13px -7px #D136D1, 5px 5px 15px 5px #740174;
+  transition: 0.3s ease-in-out;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
 }
 
 /*# sourceMappingURL=style.css.map */
