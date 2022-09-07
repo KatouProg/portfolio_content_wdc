@@ -17,6 +17,12 @@
   color: white;
 }
 
+h2 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 3rem;
+  color: #D136D1;
+}
+
 .hero_text h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -47,6 +53,50 @@
 }
 
 .about_title--subtitle {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.375rem;
+  color: white;
+  padding: 4px;
+}
+
+.about_info--subtitle {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.about_info--title {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 3rem;
+  color: #D136D1;
+  padding: 1.5rem 0;
+}
+
+.about_info--desc {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.125rem;
+  color: white;
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
+.about_info--list {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: 100;
+  line-height: 2rem;
+}
+
+.speaker_title--title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.75rem;
+  font-weight: 400;
+  color: #D136D1;
+  padding: 4px;
+}
+
+.speaker_title--subtitle {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.375rem;
   color: white;
@@ -104,7 +154,6 @@ input {
   display: block;
   width: 100%;
   height: 44rem;
-  background: rgb(9, 0, 36);
   background: linear-gradient(135deg, #0E002E 0%, #1E092B 25%, #320C65 50%, #A01B7C 75%, #C21780 100%);
 }
 .hero .hero_main {
@@ -161,6 +210,7 @@ input {
 
 .about_titleContainer {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .about_infoContainer {
@@ -201,11 +251,21 @@ input {
   line-height: 2rem;
 }
 
+.speaker {
+  padding: 8rem;
+  background: linear-gradient(135deg, #0E002E 0%, #1E092B 25%, #320C65 50%, #A01B7C 75%, #C21780 100%);
+}
+
+.speaker_titleContainer {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .myButton {
   width: 18.75rem;
   height: 4.563rem;
   background-image: linear-gradient(to right, #C41A7F 0%, #664BBF 100%);
-  border-radius: 30px;
+  border-radius: 35px;
   border: none;
   display: inline-block;
   cursor: pointer;
