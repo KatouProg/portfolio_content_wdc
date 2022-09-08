@@ -177,6 +177,12 @@ h2 {
   margin-right: 1.5rem;
 }
 
+.footer_text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  color: white;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -227,6 +233,19 @@ input {
 .titleContainer {
   text-align: center;
   margin-bottom: 77px;
+}
+
+.footer {
+  background: #141414;
+  padding: 4.375rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_text {
+  padding-left: 3.5rem;
 }
 
 .about {
@@ -374,7 +393,7 @@ input {
 }
 
 .message_answer {
-  width: 32rem;
+  width: 80%;
   height: 14rem;
   vertical-align: top;
 }
@@ -382,6 +401,8 @@ input {
 .form_answer {
   padding: 0.5rem;
   border-radius: 8px;
+  width: 100%;
+  max-width: 20rem;
 }
 
 .myButton {
@@ -407,6 +428,16 @@ input {
 .myButton:active {
   position: relative;
   top: 1px;
+}
+
+.myFooterButton {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Customize the label (the container) */
