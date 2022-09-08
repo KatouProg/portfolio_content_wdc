@@ -23,6 +23,24 @@ h2 {
   color: #D136D1;
 }
 
+.title--title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.75rem;
+  font-weight: 400;
+  color: #D136D1;
+  padding: 4px;
+}
+
+.title--subtitle {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.375rem;
+  color: white;
+  padding: 4px;
+}
+
+.hero_text {
+  margin-left: 5%;
+}
 .hero_text h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -42,21 +60,6 @@ h2 {
   font-size: 2.25rem;
   color: white;
   padding: 10px;
-}
-
-.about_title--title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3.75rem;
-  font-weight: 400;
-  color: #D136D1;
-  padding: 4px;
-}
-
-.about_title--subtitle {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 1.375rem;
-  color: white;
-  padding: 4px;
 }
 
 .about_info--subtitle {
@@ -124,6 +127,28 @@ h2 {
   font-weight: 100;
 }
 
+.schedule--time {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.375rem;
+  color: white;
+  margin-right: 20rem;
+  margin-left: 2rem;
+}
+
+.schedule_info--title {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.375rem;
+  color: #D136D1;
+  padding-bottom: 1rem;
+}
+
+.schedule_info--desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: white;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -186,7 +211,7 @@ input {
   height: 100%;
   width: 100%;
   top: -200px;
-  right: -430px;
+  right: -250px;
   z-index: 1;
   text-align: start;
 }
@@ -216,7 +241,7 @@ input {
 .hero .hero_main--sub .sign {
   position: absolute;
   top: 40%;
-  left: 23%;
+  left: 30%;
 }
 .hero .header_container {
   display: flex;
@@ -229,14 +254,15 @@ input {
   background: #141414;
 }
 
-.about_titleContainer {
+.titleContainer {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 77px;
 }
 
 .about_infoContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .about_info--img {
@@ -246,30 +272,16 @@ input {
 .about_info--text {
   display: block;
 }
-.about_info--text .about_info--subtitle {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 1.5rem;
-  color: white;
+
+.session {
+  padding: 8rem;
+  background: #141414;
 }
-.about_info--text .about_info--title {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 3rem;
-  color: #D136D1;
-  padding: 1.5rem 0;
-}
-.about_info--text .about_info--desc {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 1.125rem;
-  color: white;
-  margin: 1rem 0;
-  padding: 1rem 0;
-}
-.about_info--text .about_info--list {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 1rem;
-  color: white;
-  font-weight: 100;
-  line-height: 2rem;
+
+.schedule {
+  display: flex;
+  border-bottom: 1px solid #D136D1;
+  padding: 2.625rem;
 }
 
 .speaker {
@@ -284,23 +296,76 @@ input {
 
 .speaker_desc {
   display: flex;
-  margin-top: 70px;
+  margin-top: 56px;
+  justify-content: center;
 }
 
 .speaker_desc--img {
   margin-left: 6.875rem;
+  object-fit: cover;
 }
 
 .speaker_desc--img2 {
   margin-right: 6.875rem;
+  object-fit: cover;
 }
 
 .speaker_desc--desc {
   overflow: hidden;
+  line-height: 1.8rem;
 }
 
-.speaker_desc--separation {
-  width: 25%;
+.hero {
+  display: block;
+  width: 100%;
+  height: 44rem;
+  background: linear-gradient(135deg, #0E002E 0%, #1E092B 25%, #320C65 50%, #A01B7C 75%, #C21780 100%);
+}
+.hero .hero_main {
+  display: flex;
+  padding: 5rem 8.75rem 0 8.75rem;
+}
+.hero .hero_main .mainPicture {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: -200px;
+  right: -250px;
+  z-index: 1;
+  text-align: start;
+}
+.hero .hero_main .mainPicture--title {
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+.hero .hero_main .mainPicture--title .mainPicture--name {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  padding: 5px;
+}
+.hero .hero_main .mainPicture--title .mainPicture--function {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: white;
+  padding: 5px;
+}
+.hero .hero_main--sub {
+  display: flex;
+}
+.hero .hero_main--sub .sign {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+.hero .header_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.875rem 1.75rem;
 }
 
 .myButton {
