@@ -1,5 +1,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.titleContainer {
+  text-align: center;
+  margin-bottom: 77px;
+}
+
+.footer {
+  background: #141414;
+  padding: 4.375rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_text {
+  padding-left: 3.5rem;
+}
+
 .logo_text {
   font-size: 1.75rem;
   color: #D136D1;
@@ -40,6 +109,11 @@ h2 {
 
 .hero_text {
   margin-left: 5%;
+}
+@media all and (max-width: 1650px) {
+  .hero_text {
+    z-index: 1000;
+  }
 }
 .hero_text h1 {
   font-family: "Montserrat", sans-serif;
@@ -183,71 +257,6 @@ h2 {
   color: white;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
-}
-
-footer, header, nav, section, main {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-input {
-  -webkit-appearance: none;
-  border-radius: 0;
-}
-
-.titleContainer {
-  text-align: center;
-  margin-bottom: 77px;
-}
-
-.footer {
-  background: #141414;
-  padding: 4.375rem;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer_text {
-  padding-left: 3.5rem;
-}
-
 .about {
   padding: 8rem;
   background: #141414;
@@ -320,6 +329,11 @@ input {
   height: 44rem;
   background: linear-gradient(135deg, #0E002E 0%, #1E092B 25%, #320C65 50%, #A01B7C 75%, #C21780 100%);
 }
+@media all and (max-width: 1650px) {
+  .hero {
+    z-index: -1;
+  }
+}
 .hero .hero_main {
   display: flex;
   padding: 5rem 8.75rem 0 8.75rem;
@@ -332,6 +346,12 @@ input {
   right: -130px;
   z-index: 1;
   text-align: start;
+}
+@media all and (max-width: 1650px) {
+  .hero .hero_main .mainPicture {
+    right: 250px;
+    z-index: 0;
+  }
 }
 .hero .hero_main .mainPicture--title {
   position: absolute;
@@ -361,6 +381,11 @@ input {
   top: 40%;
   left: 30%;
 }
+@media all and (max-width: 1650px) {
+  .hero .hero_main--sub .sign {
+    display: grid;
+  }
+}
 .hero .header_container {
   display: flex;
   justify-content: space-between;
@@ -372,12 +397,27 @@ input {
   background-repeat: repeat;
   padding: 8rem 38rem;
 }
+@media all and (max-width: 1650px) {
+  .registor {
+    padding: 8rem 24rem;
+  }
+}
+@media all and (max-width: 1200px) {
+  .registor {
+    padding: 8rem 12rem;
+  }
+}
+@media all and (max-width: 840px) {
+  .registor {
+    padding: 8rem 8rem;
+  }
+}
 
 .form {
   background: #141414;
   border: 2px solid #D136D1;
   border-radius: 20px;
-  padding: 5.5rem;
+  padding: 3.5rem;
 }
 
 .form_item_container {
@@ -429,10 +469,13 @@ input {
   position: relative;
   top: 1px;
 }
+@media all and (max-width: 840px) {
+  .myButton {
+    width: 50%;
+  }
+}
 
 .myFooterButton {
-  display: flex;
-  justify-content: space-between;
   width: 80px;
   height: 80px;
   border-radius: 50%;
