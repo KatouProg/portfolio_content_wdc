@@ -1,0 +1,36 @@
+.registor {
+    background-image: url("../../media/img/bg-1.png");
+    background-repeat: repeat;
+    padding: 8rem 38rem;
+}
+
+.form {
+    background: #141414;
+    border: 2px solid $color3;
+    border-radius: 20px;
+    padding: 5.5rem;
+}
+
+.form_item_container {
+    display: flex;
+}
+
+.form_category  {
+    margin-bottom: 2.125rem;
+}
+
+.form_button {
+    text-align: center;
+}
+
+.message_answer {
+    width: 32rem;
+    height: 14rem;
+    vertical-align: top;
+}
+
+
+.form_answer {
+    padding: 0.5rem;
+    border-radius: 8px;
+}

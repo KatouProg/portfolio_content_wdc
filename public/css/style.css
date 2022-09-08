@@ -149,6 +149,34 @@ h2 {
   color: white;
 }
 
+.form_text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: 100;
+  margin-bottom: 0.8rem;
+}
+
+.needed {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.75rem;
+  color: #D136D1;
+}
+
+.explain {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.75rem;
+  color: white;
+}
+
+.checkbox_container {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: 100;
+  margin-right: 1.5rem;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -196,57 +224,9 @@ input {
   border-radius: 0;
 }
 
-.hero {
-  display: block;
-  width: 100%;
-  height: 44rem;
-  background: linear-gradient(135deg, #0E002E 0%, #1E092B 25%, #320C65 50%, #A01B7C 75%, #C21780 100%);
-}
-.hero .hero_main {
-  display: flex;
-  padding: 5rem 8.75rem 0 8.75rem;
-}
-.hero .hero_main .mainPicture {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  top: -200px;
-  right: -250px;
-  z-index: 1;
-  text-align: start;
-}
-.hero .hero_main .mainPicture--title {
-  position: absolute;
-  top: 90%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-}
-.hero .hero_main .mainPicture--title .mainPicture--name {
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  color: white;
-  padding: 5px;
-}
-.hero .hero_main .mainPicture--title .mainPicture--function {
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 400;
-  font-size: 0.875rem;
-  color: white;
-  padding: 5px;
-}
-.hero .hero_main--sub {
-  display: flex;
-}
-.hero .hero_main--sub .sign {
-  position: absolute;
-  top: 40%;
-  left: 30%;
-}
-.hero .header_container {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.875rem 1.75rem;
+.titleContainer {
+  text-align: center;
+  margin-bottom: 77px;
 }
 
 .about {
@@ -330,7 +310,7 @@ input {
   height: 100%;
   width: 100%;
   top: -200px;
-  right: -250px;
+  right: -130px;
   z-index: 1;
   text-align: start;
 }
@@ -368,6 +348,42 @@ input {
   padding: 1.875rem 1.75rem;
 }
 
+.registor {
+  background-image: url("../../media/img/bg-1.png");
+  background-repeat: repeat;
+  padding: 8rem 38rem;
+}
+
+.form {
+  background: #141414;
+  border: 2px solid #D136D1;
+  border-radius: 20px;
+  padding: 5.5rem;
+}
+
+.form_item_container {
+  display: flex;
+}
+
+.form_category {
+  margin-bottom: 2.125rem;
+}
+
+.form_button {
+  text-align: center;
+}
+
+.message_answer {
+  width: 32rem;
+  height: 14rem;
+  vertical-align: top;
+}
+
+.form_answer {
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
 .myButton {
   width: 18.75rem;
   height: 4.563rem;
@@ -391,6 +407,75 @@ input {
 .myButton:active {
   position: relative;
   top: 1px;
+}
+
+/* Customize the label (the container) */
+.checkbox_container {
+  display: inline;
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.checkbox_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 12;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox_container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.checkbox_container input:checked ~ .checkmark {
+  background-color: #D136D1;
+  border: 1px solid #DD118E;
+  background-position: right center;
+  box-shadow: 0px 10px 13px -7px #D136D1, 5px 5px 25px 5px #740174;
+  transition: 0.3s ease-in-out;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.checkbox_container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.checkbox_container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
