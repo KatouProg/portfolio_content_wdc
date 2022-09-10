@@ -262,11 +262,6 @@ h2 {
   background: #141414;
 }
 
-.titleContainer {
-  text-align: center;
-  margin-bottom: 77px;
-}
-
 .about_infoContainer {
   display: flex;
   align-items: center;
@@ -295,11 +290,6 @@ h2 {
 .speaker {
   padding: 8rem;
   background: linear-gradient(135deg, #0E002E 0%, #1E092B 25%, #320C65 50%, #A01B7C 75%, #C21780 100%);
-}
-
-.speaker_titleContainer {
-  text-align: center;
-  margin-bottom: 40px;
 }
 
 .speaker_desc {
