@@ -115,11 +115,21 @@ h2 {
     z-index: 1000;
   }
 }
+@media all and (max-width: 1200px) {
+  .hero_text {
+    text-align: center;
+  }
+}
 .hero_text h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 6.25rem;
   color: white;
+}
+@media all and (max-width: 1200px) {
+  .hero_text h1 {
+    font-size: 4rem;
+  }
 }
 .hero_text .hero_text--vol {
   font-family: "Montserrat", sans-serif;
@@ -186,6 +196,11 @@ h2 {
   font-size: 2.625rem;
   color: #D136D1;
 }
+@media all and (max-width: 1200px) {
+  .speaker_desc--name {
+    text-align: center;
+  }
+}
 
 .speaker_desc--work {
   font-family: "Noto Sans JP", sans-serif;
@@ -193,12 +208,23 @@ h2 {
   color: white;
   margin: 10px 0 30px 0;
 }
+@media all and (max-width: 1200px) {
+  .speaker_desc--work {
+    text-align: center;
+  }
+}
 
 .speaker_desc--desc {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1rem;
   color: white;
   font-weight: 100;
+}
+@media all and (max-width: 1200px) {
+  .speaker_desc--desc {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
 .schedule--time {
@@ -230,17 +256,32 @@ h2 {
   font-weight: 100;
   margin-bottom: 0.8rem;
 }
+@media all and (max-width: 1200px) {
+  .form_text {
+    padding-top: 5px;
+  }
+}
 
 .needed {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 0.75rem;
   color: #D136D1;
 }
+@media all and (max-width: 1200px) {
+  .needed {
+    padding-top: 5px;
+  }
+}
 
 .explain {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 0.75rem;
   color: white;
+}
+@media all and (max-width: 1200px) {
+  .explain {
+    padding-top: 8px;
+  }
 }
 
 .checkbox_container {
@@ -267,9 +308,21 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+@media all and (max-width: 1200px) {
+  .about_infoContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 .about_info--img {
   margin-right: 140px;
+}
+@media all and (max-width: 1200px) {
+  .about_info--img {
+    width: 300px;
+    margin-bottom: 40px;
+  }
 }
 
 .about_info--text {
@@ -279,6 +332,11 @@ h2 {
 .session {
   padding: 8rem;
   background: #141414;
+}
+@media all and (max-width: 1200px) {
+  .session {
+    padding: 0;
+  }
 }
 
 .schedule {
@@ -291,26 +349,68 @@ h2 {
   padding: 8rem;
   background: linear-gradient(135deg, #0E002E 0%, #1E092B 25%, #320C65 50%, #A01B7C 75%, #C21780 100%);
 }
+@media all and (max-width: 1200px) {
+  .speaker {
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .speaker_desc {
   display: flex;
   margin-top: 56px;
   justify-content: center;
 }
+@media all and (max-width: 1200px) {
+  .speaker_desc {
+    display: grid;
+  }
+}
 
 .speaker_desc--img {
   margin-left: 6.875rem;
   object-fit: cover;
+}
+@media all and (max-width: 1200px) {
+  .speaker_desc--img {
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
 }
 
 .speaker_desc--img2 {
   margin-right: 6.875rem;
   object-fit: cover;
 }
+@media all and (max-width: 1200px) {
+  .speaker_desc--img2 {
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
 
 .speaker_desc--desc {
   overflow: hidden;
   line-height: 1.8rem;
+}
+
+.speaker_desc--text2 {
+  display: none;
+}
+@media all and (max-width: 1200px) {
+  .speaker_desc--text2 {
+    display: inline;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .speaker_desc--text1 {
+    display: none;
+  }
 }
 
 .hero {
@@ -324,9 +424,15 @@ h2 {
     z-index: -1;
   }
 }
+@media all and (max-width: 1200px) {
+  .hero {
+    height: 45rem;
+  }
+}
 .hero .hero_main {
+  position: absolute;
   display: flex;
-  padding: 5rem 8.75rem 0 8.75rem;
+  padding: 5rem 8.75rem 5rem 8.75rem;
 }
 .hero .hero_main .mainPicture {
   position: relative;
@@ -339,8 +445,15 @@ h2 {
 }
 @media all and (max-width: 1650px) {
   .hero .hero_main .mainPicture {
-    right: 250px;
+    max-width: 450px;
+    right: -50%;
+    top: -80%;
     z-index: 0;
+  }
+}
+@media all and (max-width: 1200px) {
+  .hero .hero_main .mainPicture {
+    visibility: hidden;
   }
 }
 .hero .hero_main .mainPicture--title {
@@ -369,11 +482,28 @@ h2 {
 .hero .hero_main--sub .sign {
   position: absolute;
   top: 40%;
-  left: 30%;
+  left: 32%;
 }
 @media all and (max-width: 1650px) {
   .hero .hero_main--sub .sign {
+    left: 15%;
+    top: 38%;
+  }
+}
+@media all and (max-width: 1200px) {
+  .hero .hero_main--sub .sign {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media all and (max-width: 1650px) {
+  .hero .hero_main--sub {
     display: grid;
+    grid-template-rows: auto 1fr;
   }
 }
 .hero .header_container {
@@ -385,21 +515,22 @@ h2 {
 .registor {
   background-image: url("../../media/img/bg-1.png");
   background-repeat: repeat;
-  padding: 8rem 38rem;
+  padding: 8rem 24rem;
 }
 @media all and (max-width: 1650px) {
   .registor {
-    padding: 8rem 24rem;
+    padding: 8rem 18rem;
   }
 }
 @media all and (max-width: 1200px) {
   .registor {
-    padding: 8rem 12rem;
+    padding: 8rem 5rem;
+    text-align: center;
   }
 }
 @media all and (max-width: 840px) {
   .registor {
-    padding: 8rem 8rem;
+    padding: 8rem 4rem;
   }
 }
 
@@ -458,11 +589,6 @@ h2 {
 .myButton:active {
   position: relative;
   top: 1px;
-}
-@media all and (max-width: 840px) {
-  .myButton {
-    width: 50%;
-  }
 }
 
 .myFooterButton {
