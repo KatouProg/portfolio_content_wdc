@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
 *, *:before, *:after {
@@ -115,7 +116,7 @@ h2 {
     z-index: 1000;
   }
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 990px) {
   .hero_text {
     text-align: center;
   }
@@ -126,9 +127,14 @@ h2 {
   font-size: 6.25rem;
   color: white;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 990px) {
   .hero_text h1 {
     font-size: 4rem;
+  }
+}
+@media all and (max-width: 730px) {
+  .hero_text h1 {
+    font-size: 2rem;
   }
 }
 .hero_text .hero_text--vol {
@@ -138,12 +144,22 @@ h2 {
   color: #D136D1;
   padding: 10px;
 }
+@media all and (max-width: 730px) {
+  .hero_text .hero_text--vol {
+    font-size: 0.9rem;
+  }
+}
 .hero_text .hero_text--date {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 2.25rem;
   color: white;
   padding: 10px;
+}
+@media all and (max-width: 730px) {
+  .hero_text .hero_text--date {
+    font-size: 1rem;
+  }
 }
 
 .about_info--subtitle {
@@ -196,7 +212,7 @@ h2 {
   font-size: 2.625rem;
   color: #D136D1;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1650px) {
   .speaker_desc--name {
     text-align: center;
   }
@@ -208,7 +224,7 @@ h2 {
   color: white;
   margin: 10px 0 30px 0;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1650px) {
   .speaker_desc--work {
     text-align: center;
   }
@@ -220,7 +236,7 @@ h2 {
   color: white;
   font-weight: 100;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1650px) {
   .speaker_desc--desc {
     margin-bottom: 20px;
     text-align: center;
@@ -234,6 +250,13 @@ h2 {
   margin-right: 20rem;
   margin-left: 2rem;
 }
+@media all and (max-width: 730px) {
+  .schedule--time {
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+}
 
 .schedule_info--title {
   font-family: "Noto Sans JP", sans-serif;
@@ -241,12 +264,22 @@ h2 {
   color: #D136D1;
   padding-bottom: 1rem;
 }
+@media all and (max-width: 730px) {
+  .schedule_info--title {
+    font-size: 1rem;
+  }
+}
 
 .schedule_info--desc {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   color: white;
+}
+@media all and (max-width: 730px) {
+  .schedule_info--desc {
+    font-size: 1rem;
+  }
 }
 
 .form_text {
@@ -256,9 +289,14 @@ h2 {
   font-weight: 100;
   margin-bottom: 0.8rem;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 990px) {
   .form_text {
     padding-top: 5px;
+  }
+}
+@media all and (max-width: 730px) {
+  .form_text {
+    font-size: 0.8rem;
   }
 }
 
@@ -267,9 +305,14 @@ h2 {
   font-size: 0.75rem;
   color: #D136D1;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 990px) {
   .needed {
     padding-top: 5px;
+  }
+}
+@media all and (max-width: 730px) {
+  .needed {
+    font-size: 0.8rem;
   }
 }
 
@@ -278,9 +321,14 @@ h2 {
   font-size: 0.75rem;
   color: white;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 990px) {
   .explain {
     padding-top: 8px;
+  }
+}
+@media all and (max-width: 730px) {
+  .explain {
+    font-size: 0.8rem;
   }
 }
 
@@ -290,6 +338,12 @@ h2 {
   color: white;
   font-weight: 100;
   margin-right: 1.5rem;
+}
+@media all and (max-width: 730px) {
+  .checkbox_container {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+  }
 }
 
 .footer_text {
@@ -308,7 +362,7 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 990px) {
   .about_infoContainer {
     flex-direction: column;
     text-align: center;
@@ -318,7 +372,7 @@ h2 {
 .about_info--img {
   margin-right: 140px;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 990px) {
   .about_info--img {
     width: 300px;
     margin-bottom: 40px;
@@ -333,7 +387,7 @@ h2 {
   padding: 8rem;
   background: #141414;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 990px) {
   .session {
     padding: 0;
   }
@@ -344,12 +398,18 @@ h2 {
   border-bottom: 1px solid #D136D1;
   padding: 2.625rem;
 }
+@media all and (max-width: 730px) {
+  .schedule {
+    display: grid;
+    grid-template: fit-content(40%);
+  }
+}
 
 .speaker {
   padding: 8rem;
   background: linear-gradient(135deg, #0E002E 0%, #1E092B 25%, #320C65 50%, #A01B7C 75%, #C21780 100%);
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1650px) {
   .speaker {
     justify-content: center;
     align-items: center;
@@ -361,7 +421,7 @@ h2 {
   margin-top: 56px;
   justify-content: center;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1650px) {
   .speaker_desc {
     display: grid;
   }
@@ -371,7 +431,7 @@ h2 {
   margin-left: 6.875rem;
   object-fit: cover;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1650px) {
   .speaker_desc--img {
     object-fit: contain;
     margin-left: auto;
@@ -384,7 +444,7 @@ h2 {
   margin-right: 6.875rem;
   object-fit: cover;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1650px) {
   .speaker_desc--img2 {
     object-fit: contain;
     margin-left: auto;
@@ -401,15 +461,26 @@ h2 {
 .speaker_desc--text2 {
   display: none;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1650px) {
   .speaker_desc--text2 {
     display: inline;
   }
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1650px) {
   .speaker_desc--text1 {
     display: none;
+  }
+}
+
+header {
+  display: block;
+}
+@media all and (max-width: 840px) {
+  header {
+    display: flex;
+    padding: 1.875rem 1.75rem;
+    justify-content: space-between;
   }
 }
 
@@ -424,15 +495,28 @@ h2 {
     z-index: -1;
   }
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 990px) {
   .hero {
+    width: auto;
     height: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media all and (max-width: 730px) {
+  .hero {
+    height: 40rem;
   }
 }
 .hero .hero_main {
   position: absolute;
   display: flex;
   padding: 5rem 8.75rem 5rem 8.75rem;
+}
+@media all and (max-width: 730px) {
+  .hero .hero_main {
+    padding: 1.5rem 3.5rem;
+  }
 }
 .hero .hero_main .mainPicture {
   position: relative;
@@ -451,9 +535,9 @@ h2 {
     z-index: 0;
   }
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 990px) {
   .hero .hero_main .mainPicture {
-    visibility: hidden;
+    display: none;
   }
 }
 .hero .hero_main .mainPicture--title {
@@ -476,6 +560,11 @@ h2 {
   color: white;
   padding: 5px;
 }
+@media all and (max-width: 990px) {
+  .hero .hero_main .mainPicture--title {
+    display: none;
+  }
+}
 .hero .hero_main--sub {
   display: flex;
 }
@@ -487,10 +576,10 @@ h2 {
 @media all and (max-width: 1650px) {
   .hero .hero_main--sub .sign {
     left: 15%;
-    top: 38%;
+    top: 36%;
   }
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 990px) {
   .hero .hero_main--sub .sign {
     position: relative;
     left: auto;
@@ -498,6 +587,18 @@ h2 {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media all and (max-width: 730px) {
+  .hero .hero_main--sub .sign .sign_img {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    top: 0%;
+    left: 0%;
+    margin-top: 20px;
   }
 }
 @media all and (max-width: 1650px) {
@@ -512,17 +613,96 @@ h2 {
   padding: 1.875rem 1.75rem;
 }
 
+@media all and (max-width: 840px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media all and (max-width: 840px) {
+  .logo_text {
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 0;
+  }
+}
+
+.burgerMenu {
+  display: none;
+}
+@media all and (max-width: 840px) {
+  .burgerMenu {
+    display: inherit;
+    padding: 1.5rem 0 0 0;
+  }
+}
+
+/* Sidenav menu */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #1E092B;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #D136D1;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+  left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
 .registor {
   background-image: url("../../media/img/bg-1.png");
   background-repeat: repeat;
-  padding: 8rem 24rem;
+  padding: 8rem 30%;
 }
 @media all and (max-width: 1650px) {
   .registor {
-    padding: 8rem 18rem;
+    padding: 8rem 20%;
   }
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 990px) {
   .registor {
     padding: 8rem 5rem;
     text-align: center;
@@ -590,6 +770,14 @@ h2 {
   position: relative;
   top: 1px;
 }
+@media all and (max-width: 730px) {
+  .myButton {
+    width: 6rem;
+    height: 3rem;
+    font-size: 0.9rem;
+    padding: 3px 8px;
+  }
+}
 
 .myFooterButton {
   width: 80px;
@@ -612,6 +800,12 @@ h2 {
   -ms-user-select: none;
   user-select: none;
 }
+@media all and (max-width: 730px) {
+  .checkbox_container {
+    font-size: 0.8rem;
+    display: flex;
+  }
+}
 
 /* Hide the browser's default radio button */
 .checkbox_container input {
@@ -631,6 +825,12 @@ h2 {
   width: 16px;
   background-color: #eee;
   border-radius: 50%;
+}
+@media all and (max-width: 730px) {
+  .checkmark {
+    height: 10px;
+    width: 10px;
+  }
 }
 
 /* On mouse-over, add a grey background color */
